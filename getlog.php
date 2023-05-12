@@ -14,7 +14,7 @@ if($result->num_rows == 0){
     if($result->num_rows>0){
         session_start();
         $_SESSION['id_user'] = $result->fetch_assoc()['id'];
-        header('location: src/index.html');
+        header('location: ../src/index.html');
     }else{
         echo "Spiacente le credenziali sono errate";
     }
