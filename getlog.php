@@ -2,7 +2,8 @@
 require 'db_connection.php';
 $username = $_POST['username'];
 $password = $_POST['password'];
-
+echo "ICAO";
+die();
 $sql="SELECT * FROM users WHERE username='$username'";
 $result=$conn->query($sql);
 if($result->num_rows == 0){
