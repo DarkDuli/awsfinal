@@ -1,8 +1,9 @@
 <?php
-$ip = "18.208.220.83";
+$ip = "localhost";
 $db_name = "awssite";
 $password = "vvsiWuB51FAL";
 $username = "admin";
+$port="3306";
 $connection = new mysqli($ip, $username, $password, $db_name);
 $response = [];
 if ($connection->connect_error) {
