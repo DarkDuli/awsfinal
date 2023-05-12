@@ -2,10 +2,11 @@
 require 'db_connection.php';
 $username = $_POST['username'];
 $password = $_POST['password'];
-echo "ICAO";
-die();
+
 $sql="SELECT * FROM users WHERE username='$username'";
 $result=$conn->query($sql);
+echo "ICAO";
+die();
 if($result->num_rows == 0){
     echo "L' username utilizzato non è registrato";
 }else{
